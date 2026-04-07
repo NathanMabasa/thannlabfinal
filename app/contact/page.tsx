@@ -5,10 +5,10 @@ import AnimatedSection from '@/components/common/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'Contact | Thannlab',
-  description: 'Get in touch with Thannlab. We'd love to discuss your next project and how we can help drive your growth.',
+  description: "Get in touch with Thannlab. We'd love to discuss your next project and how we can help drive your growth.",
   openGraph: {
     title: 'Contact | Thannlab',
-    description: 'Get in touch with Thannlab. We'd love to discuss your next project and how we can help drive your growth.',
+    description: "Get in touch with Thannlab. We'd love to discuss your next project and how we can help drive your growth.",
     url: 'https://thannlab.com/contact',
   },
 }
