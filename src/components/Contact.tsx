@@ -90,7 +90,7 @@ export function Contact() {
                 transition={{ duration: 0.55, delay: 0.3 }}
               >
                 <a
-                  href="mailto:hello@thannlab.co.za"
+                  href="mailto:nathan@thannlab.com"
                   className="inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-display font-semibold rounded-xl text-black transition-all duration-200 hover:opacity-90 active:scale-[0.97]"
                   style={{
                     background: "#a3e635",
@@ -108,10 +108,10 @@ export function Contact() {
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                     <polyline points="22,6 12,13 2,6" />
                   </svg>
-                  hello@thannlab.co.za
+                  nathan@thannlab.com
                 </a>
                 <a
-                  href="https://wa.me/27000000000"
+                  href="https://wa.me/27691678332"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-display font-medium rounded-xl border transition-all duration-200 hover:bg-white/5 hover:border-white/20"
