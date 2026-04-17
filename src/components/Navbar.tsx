@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Work", href: "/work" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Navbar() {
@@ -68,7 +68,7 @@ export function Navbar() {
 
             {/* CTA */}
             <a
-              href="#contact"
+              href="/contact"
               className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-display font-semibold rounded-xl text-black transition-all duration-200 hover:opacity-90 active:scale-[0.97]"
               style={{
                 background: "#a3e635",
@@ -76,6 +76,7 @@ export function Navbar() {
               }}
             >
               Start a Project
+
             </a>
 
             {/* Mobile Toggle */}
@@ -138,7 +139,7 @@ export function Navbar() {
             ))}
             <div className="mt-8">
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3 text-base font-display font-semibold rounded-xl text-black"
                 style={{ background: "#a3e635" }}
                 onClick={() => setMobileOpen(false)}

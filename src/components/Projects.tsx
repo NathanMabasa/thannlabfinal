@@ -172,7 +172,7 @@ export function Projects() {
           transition={{ duration: 0.5, delay: 0.65 }}
         >
           <a
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-display font-medium rounded-xl border transition-all duration-200 hover:border-[#a3e635]/30 hover:text-[#a3e635]"
             style={{
               borderColor: "rgba(255,255,255,0.08)",

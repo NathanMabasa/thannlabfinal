@@ -139,14 +139,42 @@ const jsonLd = {
       publisher: {
         "@id": `${SITE_URL}/#organization`,
       },
-      potentialAction: {
-        "@type": "SearchAction",
-        target: {
-          "@type": "EntryPoint",
-          urlTemplate: `${SITE_URL}/?q={search_term_string}`,
+      potentialAction: [
+        {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: `${SITE_URL}/?q={search_term_string}`,
+          },
+          "query-input": "required name=search_term_string",
         },
-        "query-input": "required name=search_term_string",
-      },
+      ],
+      hasPart: [
+        {
+          "@type": "WebPage",
+          name: "About Thannlab",
+          url: `${SITE_URL}/about`,
+          description: "Learn about Thannlab — South Africa's premier digital agency",
+        },
+        {
+          "@type": "WebPage",
+          name: "Our Services",
+          url: `${SITE_URL}/services`,
+          description: "Web design, development, branding & digital strategy services",
+        },
+        {
+          "@type": "WebPage",
+          name: "Our Work",
+          url: `${SITE_URL}/work`,
+          description: "Portfolio of websites and digital projects by Thannlab",
+        },
+        {
+          "@type": "WebPage",
+          name: "Contact",
+          url: `${SITE_URL}/contact`,
+          description: "Get in touch to start your project with Thannlab",
+        },
+      ],
       inLanguage: "en-ZA",
     },
     {

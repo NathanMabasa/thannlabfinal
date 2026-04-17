@@ -119,7 +119,7 @@ export function About() {
             </motion.div>
 
             <motion.a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center gap-2 px-6 py-3 text-sm font-display font-semibold rounded-xl text-black transition-all duration-200 hover:opacity-90 active:scale-[0.97]"
               style={{
                 background: "#a3e635",

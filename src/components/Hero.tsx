@@ -139,7 +139,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.45 }}
         >
           <a
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-display font-semibold rounded-xl text-black transition-all duration-200 hover:opacity-90 active:scale-[0.97]"
             style={{
               background: "#a3e635",
@@ -159,7 +159,7 @@ export function Hero() {
             </svg>
           </a>
           <a
-            href="#work"
+            href="/work"
             className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-display font-medium rounded-xl text-white transition-all duration-200 border hover:bg-white/5"
             style={{
               background: "rgba(255,255,255,0.05)",
