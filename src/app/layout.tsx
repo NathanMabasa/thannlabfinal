@@ -278,7 +278,7 @@ export default function RootLayout({
         <meta name="ICBM" content="-26.2041, 28.0473" />
         <meta name="theme-color" content="#000000" />
         <meta name="color-scheme" content="dark" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.png" type="image/png" />
       </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
         {children}
