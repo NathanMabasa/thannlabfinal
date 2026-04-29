@@ -46,6 +46,13 @@ const projects = [
     year: "2025",
     description: "Youth fashion brand & online store",
   },
+  {
+    domain: "3js.co.za",
+    title: "3J",
+    category: "Business",
+    year: "2025",
+    description: "Professional business solutions & services",
+  },
 ];
 
 export function Projects() {

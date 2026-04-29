@@ -174,6 +174,18 @@ const jsonLd = {
           url: `${SITE_URL}/contact`,
           description: "Get in touch to start your project with Thannlab",
         },
+        {
+          "@type": "WebPage",
+          name: "AI Solutions",
+          url: `${SITE_URL}/ai-solutions`,
+          description: "AI chatbots, workflow automation and machine learning solutions",
+        },
+        {
+          "@type": "WebPage",
+          name: "Cybersecurity",
+          url: `${SITE_URL}/cybersecurity`,
+          description: "Website security audits, penetration testing and POPIA compliance",
+        },
       ],
       inLanguage: "en-ZA",
     },
