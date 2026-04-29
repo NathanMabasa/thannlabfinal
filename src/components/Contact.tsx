@@ -4,10 +4,13 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const footerLinks = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Work", href: "/work" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Process", href: "/process" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Contact() {

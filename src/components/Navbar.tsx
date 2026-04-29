@@ -139,6 +139,10 @@ export function Navbar() {
                 style={{ color: "rgba(255,255,255,0.5)" }}>
                 Work
               </a>
+              <a href="/pricing" className="px-4 py-2 text-sm rounded-lg transition-colors duration-200 hover:text-white"
+                style={{ color: "rgba(255,255,255,0.5)" }}>
+                Pricing
+              </a>
               <a href="/contact" className="px-4 py-2 text-sm rounded-lg transition-colors duration-200 hover:text-white"
                 style={{ color: "rgba(255,255,255,0.5)" }}>
                 Contact
@@ -232,7 +236,7 @@ export function Navbar() {
               </AnimatePresence>
             </motion.div>
 
-            {[{ label: "Work", href: "/work" }, { label: "Contact", href: "/contact" }].map((link, i) => (
+            {[{ label: "Work", href: "/work" }, { label: "Pricing", href: "/pricing" }, { label: "Contact", href: "/contact" }].map((link, i) => (
               <motion.a key={link.label} href={link.href}
                 className="py-4 text-2xl font-display font-semibold text-white border-b"
                 style={{ borderColor: "rgba(255,255,255,0.06)" }}
