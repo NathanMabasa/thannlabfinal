@@ -93,22 +93,19 @@ export function LoadingScreen() {
               >
                 thannlab
               </span>
-              <motion.span
+              <motion.div
                 style={{
-                  color: "#a3e635",
-                  fontSize: "clamp(9rem, 18vw, 15rem)",
-                  lineHeight: 0.65,
-                  marginLeft: "8px",
-                  display: "inline-block",
-                  translateY: "-2.2rem",
-                  textShadow:
-                    "0 0 80px rgba(163,230,53,0.55), 0 0 160px rgba(163,230,53,0.2)",
+                  width: "clamp(6rem, 12vw, 10rem)",
+                  height: "clamp(6rem, 12vw, 10rem)",
+                  borderRadius: "50%",
+                  background: "radial-gradient(circle at 32% 32%, rgba(255,255,255,0.3) 0%, transparent 55%), #a3e635",
+                  marginLeft: "12px",
+                  flexShrink: 0,
+                  boxShadow: "0 0 80px rgba(163,230,53,0.55), 0 0 160px rgba(163,230,53,0.2)",
                 }}
                 animate={{ rotate: [0, 45, -8, 45, 0] }}
                 transition={{ duration: 1.7, delay: 0.55, ease: "easeInOut" }}
-              >
-                .
-              </motion.span>
+              />
             </motion.div>
           </motion.div>
         </>

@@ -160,11 +160,11 @@ export function Contact() {
               <span
                 className="rounded-full flex-shrink-0 transition-transform duration-300 group-hover:rotate-45"
                 style={{
-                  width: "8rem",
-                  height: "8rem",
+                  width: "2rem",
+                  height: "2rem",
                   background: "radial-gradient(circle at 32% 32%, rgba(255,255,255,0.22) 0%, transparent 52%), #a3e635",
                   marginLeft: "4px",
-                  boxShadow: "0 0 36px rgba(163,230,53,0.35)",
+                  boxShadow: "0 0 14px rgba(163,230,53,0.35)",
                 }}
               />
             </a>
