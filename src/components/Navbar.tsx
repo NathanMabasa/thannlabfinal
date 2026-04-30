@@ -59,12 +59,22 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <a href="/" className="flex items-center group">
-              <span className="font-display font-bold text-xl text-white tracking-tight">thann</span>
+              <span
+                className="font-display font-bold text-white"
+                style={{ fontSize: "1.45rem", letterSpacing: "-0.02em" }}
+              >
+                thannlab
+              </span>
               <span
                 className="inline-block leading-none transition-transform duration-300 group-hover:rotate-45"
-                style={{ color: "#a3e635", fontSize: "2rem", margin: "0 2px" }}
+                style={{
+                  color: "#a3e635",
+                  fontSize: "3.2rem",
+                  lineHeight: 0.78,
+                  marginLeft: "2px",
+                  display: "inline-block",
+                }}
               >.</span>
-              <span className="font-display font-bold text-xl text-white tracking-tight">lab</span>
             </a>
 
             {/* Desktop Links */}

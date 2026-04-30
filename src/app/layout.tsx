@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { LoadingScreen } from "@/components/LoadingScreen";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const spaceGrotesk = Space_Grotesk({
@@ -328,6 +329,7 @@ export default function RootLayout({
         <link rel="icon" href="/icon.png" type="image/png" />
       </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
+        <LoadingScreen />
         {children}
       </body>
     </html>
