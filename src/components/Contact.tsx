@@ -150,11 +150,13 @@ export function Contact() {
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="flex flex-col md:flex-row items-center justify-between gap-5">
             {/* Logo */}
-            <a href="/" className="flex items-center gap-0.5">
-              <span className="font-display font-bold text-base text-white tracking-tight">
-                thannlab
-              </span>
-              <span style={{ color: "#a3e635", fontSize: "1.25rem" }}>.</span>
+            <a href="/" className="flex items-center group">
+              <span className="font-display font-bold text-base text-white tracking-tight">thann</span>
+              <span
+                className="inline-block leading-none transition-transform duration-300 group-hover:rotate-45"
+                style={{ color: "#a3e635", fontSize: "1.75rem", margin: "0 1px" }}
+              >.</span>
+              <span className="font-display font-bold text-base text-white tracking-tight">lab</span>
             </a>
 
             {/* Links */}
