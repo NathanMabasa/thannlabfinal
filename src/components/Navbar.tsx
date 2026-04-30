@@ -68,8 +68,8 @@ export function Navbar() {
               <span
                 className="rounded-full flex-shrink-0 transition-transform duration-300 group-hover:rotate-45"
                 style={{
-                  width: "3rem",
-                  height: "3rem",
+                  width: "1.5rem",
+                  height: "1.5rem",
                   background: "radial-gradient(circle at 32% 32%, rgba(255,255,255,0.28) 0%, transparent 52%), #a3e635",
                   marginLeft: "5px",
                   boxShadow: "0 0 20px rgba(163,230,53,0.45)",

@@ -95,8 +95,8 @@ export function LoadingScreen() {
               </span>
               <motion.div
                 style={{
-                  width: "clamp(6rem, 12vw, 10rem)",
-                  height: "clamp(6rem, 12vw, 10rem)",
+                  width: "clamp(3rem, 6vw, 5rem)",
+                  height: "clamp(3rem, 6vw, 5rem)",
                   borderRadius: "50%",
                   background: "radial-gradient(circle at 32% 32%, rgba(255,255,255,0.3) 0%, transparent 55%), #a3e635",
                   marginLeft: "12px",
