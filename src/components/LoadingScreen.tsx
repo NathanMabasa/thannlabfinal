@@ -100,6 +100,7 @@ export function LoadingScreen() {
                   lineHeight: 0.65,
                   marginLeft: "8px",
                   display: "inline-block",
+                  translateY: "-2.2rem",
                   textShadow:
                     "0 0 80px rgba(163,230,53,0.55), 0 0 160px rgba(163,230,53,0.2)",
                 }}
