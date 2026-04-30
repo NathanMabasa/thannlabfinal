@@ -69,9 +69,9 @@ export function Navbar() {
                 className="inline-block leading-none transition-transform duration-300 group-hover:rotate-45"
                 style={{
                   color: "#a3e635",
-                  fontSize: "3.2rem",
-                  lineHeight: 0.78,
-                  marginLeft: "2px",
+                  fontSize: "6rem",
+                  lineHeight: 0.65,
+                  marginLeft: "3px",
                   display: "inline-block",
                 }}
               >.</span>

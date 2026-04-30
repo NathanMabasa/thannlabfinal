@@ -10,9 +10,9 @@ export function LoadingScreen() {
   useEffect(() => {
     const w = window.innerWidth;
     const h = window.innerHeight;
-    // Nav logo center sits roughly 120px from left, 36px from top
-    setTarget({ x: 120 - w / 2, y: 36 - h / 2 });
-    const t = setTimeout(() => setVisible(false), 2400);
+    // Nav logo center: ~120px from left, ~40px from top (h-20 midpoint)
+    setTarget({ x: 120 - w / 2, y: 40 - h / 2 });
+    const t = setTimeout(() => setVisible(false), 2200);
     return () => clearTimeout(t);
   }, []);
 
@@ -26,10 +26,10 @@ export function LoadingScreen() {
             className="fixed inset-0"
             style={{ background: "#000", zIndex: 199 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.55, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.25 }}
           />
 
-          {/* Progress bar — fades out immediately on exit */}
+          {/* Progress bar */}
           <motion.div
             key="loader-bar"
             className="fixed bottom-12 left-1/2 -translate-x-1/2 overflow-hidden"
@@ -41,7 +41,7 @@ export function LoadingScreen() {
               borderRadius: "999px",
             }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.15 }}
           >
             <motion.div
               style={{
@@ -51,24 +51,28 @@ export function LoadingScreen() {
               }}
               initial={{ width: "0%" }}
               animate={{ width: "100%" }}
-              transition={{ duration: 2.1, ease: "easeInOut" }}
+              transition={{ duration: 1.9, ease: "easeInOut" }}
             />
           </motion.div>
 
-          {/* Logo — shrinks & flies to nav position */}
+          {/* Logo — flies to nav then fades seamlessly */}
           <motion.div
             key="loader-logo"
             className="fixed inset-0 flex items-center justify-center pointer-events-none"
             style={{ zIndex: 200 }}
-            exit={{ x: target.x, y: target.y, scale: 0.2 }}
-            transition={{ duration: 0.52, ease: "easeIn" }}
+            exit={{ x: target.x, y: target.y, scale: 0.22, opacity: 0 }}
+            transition={{
+              duration: 0.65,
+              ease: "easeIn",
+              opacity: { duration: 0.25, delay: 0.4 },
+            }}
           >
             {/* Ambient glow */}
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  "radial-gradient(ellipse 55% 45% at 50% 50%, rgba(163,230,53,0.07) 0%, transparent 70%)",
+                  "radial-gradient(ellipse 60% 55% at 50% 50%, rgba(163,230,53,0.08) 0%, transparent 70%)",
                 pointerEvents: "none",
               }}
             />
@@ -92,11 +96,12 @@ export function LoadingScreen() {
               <motion.span
                 style={{
                   color: "#a3e635",
-                  fontSize: "clamp(4.5rem, 9.5vw, 8rem)",
-                  lineHeight: 0.78,
-                  marginLeft: "5px",
+                  fontSize: "clamp(9rem, 18vw, 15rem)",
+                  lineHeight: 0.65,
+                  marginLeft: "8px",
                   display: "inline-block",
-                  textShadow: "0 0 70px rgba(163,230,53,0.5)",
+                  textShadow:
+                    "0 0 80px rgba(163,230,53,0.55), 0 0 160px rgba(163,230,53,0.2)",
                 }}
                 animate={{ rotate: [0, 45, -8, 45, 0] }}
                 transition={{ duration: 1.7, delay: 0.55, ease: "easeInOut" }}

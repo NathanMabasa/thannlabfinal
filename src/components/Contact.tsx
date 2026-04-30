@@ -161,8 +161,8 @@ export function Contact() {
                 className="inline-block leading-none transition-transform duration-300 group-hover:rotate-45"
                 style={{
                   color: "#a3e635",
-                  fontSize: "2.2rem",
-                  lineHeight: 0.78,
+                  fontSize: "4rem",
+                  lineHeight: 0.65,
                   marginLeft: "2px",
                   display: "inline-block",
                 }}
