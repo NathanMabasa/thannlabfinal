@@ -157,12 +157,16 @@ export function Contact() {
               >
                 thannlab
               </span>
-              <span style={{ display: "inline-block", marginLeft: "2px", transform: "translateY(-1.35rem)" }}>
-                <span
-                  className="inline-block transition-transform duration-300 group-hover:rotate-45"
-                  style={{ color: "#a3e635", fontSize: "8rem", lineHeight: 0.65, display: "inline-block" }}
-                >.</span>
-              </span>
+              <span
+                className="rounded-full flex-shrink-0 transition-transform duration-300 group-hover:rotate-45"
+                style={{
+                  width: "8rem",
+                  height: "8rem",
+                  background: "radial-gradient(circle at 32% 32%, rgba(255,255,255,0.22) 0%, transparent 52%), #a3e635",
+                  marginLeft: "4px",
+                  boxShadow: "0 0 36px rgba(163,230,53,0.35)",
+                }}
+              />
             </a>
 
             {/* Links */}

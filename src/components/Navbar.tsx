@@ -65,13 +65,16 @@ export function Navbar() {
               >
                 thannlab
               </span>
-              {/* Outer wrapper lifts the period up to visually align with the text */}
-              <span style={{ display: "inline-block", marginLeft: "3px", transform: "translateY(-2rem)" }}>
-                <span
-                  className="inline-block transition-transform duration-300 group-hover:rotate-45"
-                  style={{ color: "#a3e635", fontSize: "12rem", lineHeight: 0.65, display: "inline-block" }}
-                >.</span>
-              </span>
+              <span
+                className="rounded-full flex-shrink-0 transition-transform duration-300 group-hover:rotate-45"
+                style={{
+                  width: "12rem",
+                  height: "12rem",
+                  background: "radial-gradient(circle at 32% 32%, rgba(255,255,255,0.28) 0%, transparent 52%), #a3e635",
+                  marginLeft: "6px",
+                  boxShadow: "0 0 60px rgba(163,230,53,0.4)",
+                }}
+              />
             </a>
 
             {/* Desktop Links */}
