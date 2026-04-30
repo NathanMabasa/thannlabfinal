@@ -133,7 +133,7 @@ export function Hero() {
 
         {/* CTA Buttons */}
         <motion.div
-          className="flex flex-wrap items-center gap-3 mb-20 md:mb-28"
+          className="flex flex-wrap items-center gap-3 mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
@@ -169,6 +169,34 @@ export function Hero() {
           >
             View Our Work
           </a>
+        </motion.div>
+
+        {/* Social proof */}
+        <motion.div
+          className="flex items-center flex-wrap gap-x-5 gap-y-2 mb-20 md:mb-28"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.58 }}
+        >
+          <div>
+            <span className="font-display text-sm font-bold text-white">50+</span>
+            <span className="text-xs ml-1.5" style={{ color: "rgba(255,255,255,0.3)" }}>Projects</span>
+          </div>
+          <div className="w-px h-4 hidden sm:block" style={{ background: "rgba(255,255,255,0.1)" }} />
+          <div>
+            <span className="font-display text-sm font-bold text-white">30+</span>
+            <span className="text-xs ml-1.5" style={{ color: "rgba(255,255,255,0.3)" }}>Clients</span>
+          </div>
+          <div className="w-px h-4 hidden sm:block" style={{ background: "rgba(255,255,255,0.1)" }} />
+          <div>
+            <span className="font-display text-sm font-bold text-white">21 days</span>
+            <span className="text-xs ml-1.5" style={{ color: "rgba(255,255,255,0.3)" }}>Avg. delivery</span>
+          </div>
+          <div className="w-px h-4 hidden sm:block" style={{ background: "rgba(255,255,255,0.1)" }} />
+          <div>
+            <span className="font-display text-sm font-bold text-white">100%</span>
+            <span className="text-xs ml-1.5" style={{ color: "rgba(255,255,255,0.3)" }}>Satisfaction</span>
+          </div>
         </motion.div>
       </div>
 

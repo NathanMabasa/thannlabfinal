@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { ProcessSection } from "@/components/ProcessSection";
 import { Contact } from "@/components/Contact";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "How We Work | Our Process — Thannlab Digital Agency",
@@ -23,6 +24,7 @@ export default function ProcessPage() {
     <>
       <Navbar />
       <main role="main">
+        <BreadcrumbJsonLd crumbs={[{ name: "How We Work", item: "https://thannlab.com/process" }]} />
         <section
           className="pt-36 pb-10 px-6 md:px-10 lg:px-16 relative overflow-hidden"
           style={{ background: "#000" }}

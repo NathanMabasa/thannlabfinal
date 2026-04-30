@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { PricingSection } from "@/components/PricingSection";
 import { Contact } from "@/components/Contact";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Pricing | Web Design, AI & Cybersecurity Packages — Thannlab",
@@ -23,6 +24,7 @@ export default function PricingPage() {
     <>
       <Navbar />
       <main role="main">
+        <BreadcrumbJsonLd crumbs={[{ name: "Pricing", item: "https://thannlab.com/pricing" }]} />
         <section
           className="pt-36 pb-10 px-6 md:px-10 lg:px-16 relative overflow-hidden"
           style={{ background: "#000" }}

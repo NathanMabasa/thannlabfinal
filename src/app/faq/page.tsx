@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { FAQSection } from "@/components/FAQSection";
 import { Contact } from "@/components/Contact";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "FAQ | Frequently Asked Questions — Thannlab Digital Agency",
@@ -23,6 +24,7 @@ export default function FAQPage() {
     <>
       <Navbar />
       <main role="main">
+        <BreadcrumbJsonLd crumbs={[{ name: "FAQ", item: "https://thannlab.com/faq" }]} />
         <section
           className="pt-36 pb-10 px-6 md:px-10 lg:px-16 relative overflow-hidden"
           style={{ background: "#000" }}

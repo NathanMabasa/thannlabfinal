@@ -286,6 +286,23 @@ const jsonLd = {
         name: "South Africa",
       },
     },
+    {
+      "@type": "ItemList",
+      "@id": `${SITE_URL}/#site-navigation`,
+      name: "Thannlab Site Navigation",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", url: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "About", url: `${SITE_URL}/about` },
+        { "@type": "ListItem", position: 3, name: "Services", url: `${SITE_URL}/services` },
+        { "@type": "ListItem", position: 4, name: "AI Solutions", url: `${SITE_URL}/ai-solutions` },
+        { "@type": "ListItem", position: 5, name: "Cybersecurity", url: `${SITE_URL}/cybersecurity` },
+        { "@type": "ListItem", position: 6, name: "Our Work", url: `${SITE_URL}/work` },
+        { "@type": "ListItem", position: 7, name: "Pricing", url: `${SITE_URL}/pricing` },
+        { "@type": "ListItem", position: 8, name: "How We Work", url: `${SITE_URL}/process` },
+        { "@type": "ListItem", position: 9, name: "FAQ", url: `${SITE_URL}/faq` },
+        { "@type": "ListItem", position: 10, name: "Contact", url: `${SITE_URL}/contact` },
+      ],
+    },
   ],
 };
 

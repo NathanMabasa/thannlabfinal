@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "About Thannlab | Digital Agency Story — Johannesburg, South Africa",
@@ -23,6 +24,7 @@ export default function AboutPage() {
     <>
       <Navbar />
       <main role="main">
+        <BreadcrumbJsonLd crumbs={[{ name: "About", item: "https://thannlab.com/about" }]} />
         {/* Page hero */}
         <section
           className="pt-36 pb-10 px-6 md:px-10 lg:px-16"

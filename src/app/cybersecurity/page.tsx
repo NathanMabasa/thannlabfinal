@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { CyberSection } from "@/components/CyberSection";
 import { Contact } from "@/components/Contact";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Cybersecurity Services | Website Security & POPIA Compliance — Thannlab",
@@ -23,6 +24,7 @@ export default function CybersecurityPage() {
     <>
       <Navbar />
       <main role="main">
+        <BreadcrumbJsonLd crumbs={[{ name: "Cybersecurity", item: "https://thannlab.com/cybersecurity" }]} />
         <section className="pt-36 pb-10 px-6 md:px-10 lg:px-16 relative overflow-hidden" style={{ background: "#000" }}>
           <div className="absolute inset-0 pointer-events-none"
             style={{ background: "radial-gradient(ellipse 60% 50% at 50% 0%, rgba(163,230,53,0.07) 0%, transparent 70%)" }} />

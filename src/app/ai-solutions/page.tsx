@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { AIServicesSection } from "@/components/AIServicesSection";
 import { Contact } from "@/components/Contact";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "AI Solutions | Chatbots, Automation & Machine Learning — Thannlab",
@@ -23,6 +24,7 @@ export default function AISolutionsPage() {
     <>
       <Navbar />
       <main role="main">
+        <BreadcrumbJsonLd crumbs={[{ name: "AI Solutions", item: "https://thannlab.com/ai-solutions" }]} />
         <section className="pt-36 pb-10 px-6 md:px-10 lg:px-16 relative overflow-hidden" style={{ background: "#000" }}>
           {/* Glow */}
           <div className="absolute inset-0 pointer-events-none"

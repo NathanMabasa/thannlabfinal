@@ -5,6 +5,9 @@ import { About } from "@/components/About";
 import { Services } from "@/components/Services";
 import { Projects } from "@/components/Projects";
 import { Contact } from "@/components/Contact";
+import { LogoBar } from "@/components/LogoBar";
+import { Testimonials } from "@/components/Testimonials";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Thannlab | Premium Digital Agency — Johannesburg, South Africa",
@@ -20,9 +23,12 @@ export default function Home() {
     <>
       <Navbar />
       <main role="main">
+        <BreadcrumbJsonLd crumbs={[]} />
         <Hero />
+        <LogoBar />
         <About />
         <Services />
+        <Testimonials />
         <Projects />
         <Contact />
       </main>
